@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RegisterActivity"
+        >
+        <TextView
+            android:id="@+id/titleText"
+            android:text="Leaderboards - LIGHT"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:text="test user 1 - 593824\ntest user 2 - 1004392"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:layout_below="@id/titleText" />
+
+        <Button
+            android:id="@+id/diff0Button"
+            android:text="LIGHT Mode"
+            android:onClick="showScores0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_below="@id/scoreText" />
+
+        <Button
+            android:id="@+id/diff1Button"
+            android:text="HYPER Mode"
+            android:onClick="showScores1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_below="@id/diff0Button" />
+
+        <Button
+            android:id="@+id/diff2Button"
+            android:text="ULTRA Mode"
+            android:onClick="showScores2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_below="@id/diff1Button" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:text="Back"
+            android:onClick="closeLeaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_below="@id/diff2Button" />
+    </android.widget.RelativeLayout>
+</ScrollView>
